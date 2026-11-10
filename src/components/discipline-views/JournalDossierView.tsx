@@ -22,7 +22,7 @@ const filterCategories = [
 
 export default function JournalDossierView({ profile, onBack, onSelectProject }: DossierViewProps) {
   const [activeFilter, setActiveFilter] = useState('all');
-  const avatarSrc = '/Dede.png';
+  const avatarSrc = `${import.meta.env.BASE_URL}Dede.png`;
 
   const getProjectCategory = (projectId: string) => {
     for (const p of portfolioData) {

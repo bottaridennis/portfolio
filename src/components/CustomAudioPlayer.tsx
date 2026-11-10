@@ -68,7 +68,7 @@ export default function CustomAudioPlayer({ src, trackInfo }: CustomAudioPlayerP
         title: trackInfo?.title || 'Traccia Audio',
         artist: trackInfo?.artist || 'Dennis Bottari · Suno AI',
         audioUrl: src,
-        imageUrl: trackInfo?.imageUrl || '/52-Hertz.jpeg',
+        imageUrl: trackInfo?.imageUrl || `${import.meta.env.BASE_URL}52-Hertz.jpeg`,
         profileId: trackInfo?.profileId || 'musicista',
       });
     }

@@ -70,7 +70,7 @@ export default function Home({ onProfileClick, onDirectProjectClick, onPlayGame 
   const { playTrack, currentTrack, isPlaying: globalIsPlaying, togglePlay } = useAudio();
   const { t, language } = useLanguage();
   const portfolio = useLocalizedPortfolio();
-  const avatarSrc = '/Dede.png';
+  const avatarSrc = `${import.meta.env.BASE_URL}Dede.png`;
 
   // Count distinct projects in the portfolio
   const totalProjects = useMemo(() => {
@@ -297,7 +297,7 @@ export default function Home({ onProfileClick, onDirectProjectClick, onPlayGame 
               profileId: 'web-developer', 
               projectId: 'dnd-hub', 
               tech: 'React · TS · PWA',
-              imageUrl: '/dnd.png'
+              imageUrl: `${import.meta.env.BASE_URL}dnd.png`
             },
             { 
               title: portfolio.find(p => p.id === 'game-designer')?.projects.find(pj => pj.id === 'pixel-art-character')?.title || 'Aseprite Animazione 2D', 
@@ -306,7 +306,7 @@ export default function Home({ onProfileClick, onDirectProjectClick, onPlayGame 
               projectId: 'pixel-art-character', 
               tech: 'Aseprite · CC-0 · 60fps',
               isPixelArt: true,
-              imageUrl: '/PG.gif'
+              imageUrl: `${import.meta.env.BASE_URL}PG.gif`
             },
             { 
               title: portfolio.find(p => p.id === 'musicista')?.projects.find(pj => pj.id === '52-hertz')?.title || '52 Hertz', 
@@ -315,8 +315,8 @@ export default function Home({ onProfileClick, onDirectProjectClick, onPlayGame 
               projectId: '52-hertz', 
               tech: 'Audio · Ambient',
               isAudio: true,
-              audioUrl: '/52-Hertz.mp3',
-              imageUrl: '/52-Hertz.jpeg'
+              audioUrl: `${import.meta.env.BASE_URL}52-Hertz.mp3`,
+              imageUrl: `${import.meta.env.BASE_URL}52-Hertz.jpeg`
             },
             { 
               title: portfolio.find(p => p.id === 'elettricista')?.projects.find(pj => pj.id === 'parking-sensor')?.title || 'Sensore Parcheggio', 

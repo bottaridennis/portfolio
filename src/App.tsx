@@ -111,7 +111,7 @@ function AppContent() {
     } else if (profileId) {
       window.history.pushState(null, '', `#${profileId}`);
     } else {
-      window.history.pushState(null, '', '/');
+      window.history.pushState(null, '', import.meta.env.BASE_URL);
     }
     
     mainRef.current?.scrollTo({ top: 0, behavior: 'smooth' });

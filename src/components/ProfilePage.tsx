@@ -37,7 +37,7 @@ export default function ProfilePage({ profile, onBack, onSelectProject, onPlayGa
   const [viewMode, setViewMode] = useState<'studio' | 'dossier'>('dossier');
   const { t, language } = useLanguage();
   const portfolio = useLocalizedPortfolio();
-  const avatarSrc = '/Dede.png';
+  const avatarSrc = `${import.meta.env.BASE_URL}Dede.png`;
   const IconComponent = profile.icon;
   const theme = colorMap[profile.id] || { accent: '#6366f1', bgSoft: 'rgba(99, 102, 241, 0.12)', border: 'rgba(99, 102, 241, 0.3)' };
 

@@ -160,7 +160,7 @@ export default function ArcadeConsoleView({ profile, onBack, onSelectProject, on
                   }}
                 >
                   <img
-                    src="/PG.gif"
+                    src={`${import.meta.env.BASE_URL}PG.gif`}
                     alt="Personaggio 2D Animato Dennis Bottari"
                     className="w-32 h-32 object-contain"
                     style={{ imageRendering: 'pixelated' }}
@@ -195,7 +195,7 @@ export default function ArcadeConsoleView({ profile, onBack, onSelectProject, on
                   <div className="p-3.5 rounded-xl bg-zinc-950 border border-zinc-800 overflow-x-auto">
                     <div className="flex items-center gap-1 justify-center min-w-[280px]">
                       <img
-                        src="/sprite.png"
+                        src={`${import.meta.env.BASE_URL}sprite.png`}
                         alt="Sprite Sheet 2D Dennis Bottari"
                         className="h-12 object-contain border border-emerald-500/30 p-1 bg-zinc-900/80 rounded"
                         style={{ imageRendering: 'pixelated' }}
@@ -220,7 +220,7 @@ export default function ArcadeConsoleView({ profile, onBack, onSelectProject, on
                 {/* Download and Inspection Buttons */}
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <a
-                    href="/sprite.png"
+                    href={`${import.meta.env.BASE_URL}sprite.png`}
                     download="sprite_dennis_bottari.png"
                     className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-colors shadow-lg shadow-emerald-500/20 cursor-pointer"
                   >
@@ -229,7 +229,7 @@ export default function ArcadeConsoleView({ profile, onBack, onSelectProject, on
                   </a>
 
                   <a
-                    href="/PG.gif"
+                    href={`${import.meta.env.BASE_URL}PG.gif`}
                     download="personaggio_animato_dennis_bottari.gif"
                     className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-colors cursor-pointer"
                   >

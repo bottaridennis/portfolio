@@ -247,7 +247,7 @@ export default function ProjectPage({ project, profile, onBack, onSelectProject,
 
               <div className="p-4 rounded-2xl bg-zinc-950 border border-zinc-800 overflow-x-auto flex flex-col items-center gap-3">
                 <img 
-                  src="/sprite.png" 
+                  src={`${import.meta.env.BASE_URL}sprite.png`}
                   alt="Sprite Sheet Dennis Bottari"
                   className="h-14 object-contain border border-emerald-500/30 p-1.5 bg-zinc-900 rounded"
                   style={{ imageRendering: 'pixelated' }}
@@ -259,7 +259,7 @@ export default function ProjectPage({ project, profile, onBack, onSelectProject,
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <a
-                  href="/sprite.png"
+                  href={`${import.meta.env.BASE_URL}sprite.png`}
                   download="sprite_dennis_bottari.png"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-all shadow-md cursor-pointer"
                 >
@@ -267,7 +267,7 @@ export default function ProjectPage({ project, profile, onBack, onSelectProject,
                   <span>Scarica Sprite Sheet PNG</span>
                 </a>
                 <a
-                  href="/PG.gif"
+                  href={`${import.meta.env.BASE_URL}PG.gif`}
                   download="animazione_dennis_bottari.gif"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/10 text-emerald-300 border border-emerald-500/30 font-bold text-xs transition-all cursor-pointer"
                 >
